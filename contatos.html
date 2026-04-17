@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Joao Adrade"/>
+    <meta name="descrição" content="melhor site do mundo"/>
+    <meta name="keywords" content="Fatec, code, program"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><i class="bi bi-cart-fill"></i></i> PokeShop.net</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contatos.html">Contatos</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+    <div class="container mt-3">
+          <br/><h1> Contato </h1><hr/><br/>
+          <form class="row g-3">
+            
+              <div class="col-md-4 col-sm-12">
+                <div class="form-floating">
+                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome completo" required>
+                  <label for="nome">Nome completo <i class="bi bi-person-vcard-fill"></i></label>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="form-floating">
+                  <input type="text" name="email" id="email" class="form-control" placeholder="Email completo" required>
+                  <label for="email">Email completo <i class="bi bi-envelope"></i></label>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="form-floating">
+                  <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" required>
+                  <label for="senha">Senha <i class="bi bi-key"></i></label>
+                </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-12">
+                <div class="form-floating">
+                  <input type="date" name="datanasc" id="datanasc" class="form-control" placeholder="Data de nascimento " required>
+                  <label for="datanasc">Data de nascimento <i class="bi bi-calendar"></i></label>
+                </div>
+              </div>
+              
+              <div class="col-md-4   col-sm-12">
+                <div class="form-floating"> 
+                  <select name="categoria" id="categoria" class="form-select">
+                  <option value="" selected disabled> Selecione uma categoria </option>
+                  <option value="Treinador Pokemon"> Treinador Pokémon </option>
+                  <option value="Líder de Ginasio"> Líder de Ginásio </option>
+                  <option value="Criminoso"> Criminoso </option>
+                  <option value="Civil"> Civíl </option>
+                  </select>
+                  <label for="categoria">Categoria <i class="bi bi-person-fill"></i></label>
+                </div>
+              </div>
+
+                <div class="col-md-4   col-sm-12">
+                  <label class="form-label d-block">Tipo de treinador <i class="bi bi-person-square"></i></label>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="Treinador iniciante" class="form-check-input">
+                    <label for="treinador iniciante" class="form-check-label">Treinador iniciante</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="Pokémaniaco" class="form-check-input">
+                    <label for="Pokémaniaco" class="form-check-label">Pokémaniaco</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="Rico" class="form-check-input">
+                    <label for="Rico" class="form-check-label">Rico</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="Treinador ás" class="form-check-input">
+                    <label for="Treinador ás" class="form-check-label">Treinador ás</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="Nadador" class="form-check-input">
+                    <label for="Nadador" class="form-check-label">Nadador</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="Caçador de insetos" class="form-check-input">
+                    <label for="Caçador de insetos" class="form-check-label">Caçador de insetos</label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <div class="form-check">
+                    <input type="checkbox" name="termos" id="termos" class="form-check-input" required>
+                    <label for="termos" class="form-check-label">Eu declaro que li e aceito os termos de uso da plataforma</label>
+                  </div>
+                  <br/> 
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-success"> Enviar </button>
+                    <button type="reset" class="btn btn-danger"> Limpar </button>
+                    <button type="button" class="btn btn-secondary "> Cancelar </button>
+                  </div>
+
+                </div>
+              
+              
+              </form>
+              <br/><br/><br/><h3> Novo produto</h3><hr/><br/>
+          <form class="row g-3">
+
+              <div class="col-md-4 col-sm-12">
+                <div class="form-floating">
+                  <input type="text" name="nomeProd" id="nomeprod" class="form-control" placeholder="Nome do novo produto" required>
+                  <label for="nomeprod">Nome do novo produto <i class="bi bi-bag"></i></label>
+                </div>
+              </div>
+                
+              <div class="col-md-4 col-sm-12">
+                <div class="form-floating">
+                  <input type="number" name="Preço" id="Preço" class="form-control" placeholder="Nome do novo produto" required step="0.5">
+                  <label for="Preço">Preço do novo produto <i class="bi bi-cart-plus"></i></label>
+                </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-12">
+                <div class="form-floating">
+                  <input type="number" name="quantidade" id="quantidade" class="form-control" placeholder="Quantidade do novo produto">
+                  <label for="quantidade">Quantidade de produtos <i class="bi bi-box2"></i></label>
+                </div>
+              </div>
+
+              <div class="col-md-6   col-sm-12">
+                <div class="form-floating"> 
+                  <select name="categoria" id="categoria" class="form-select">
+                  <option value="" selected disabled> Selecione uma categoria para seu produto </option>
+                  <option value="Pokémon"> Pokémon </option>
+                  <option value="Pedra evolutiva"> Pedra evolutiva </option>
+                  <option value="Itens de batalha"> Itens de batalha </option>
+                  <option value="Pokébolas"> Pokébolas </option>
+                  </select>
+                  <label for="categoria">Categoria <i class="bi bi-check2-circle"></i></label>
+                </div>
+              </div>
+
+              <div class="col-md-6   col-sm-12">
+                  <label class="form-label d-block">Local de fabricação / Encontro <i class="bi bi-geo-alt"></i></label>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" name="local" id="SP" class="form-check-input">
+                    <label for="SP" class="form-check-label">SP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" name="local" id="RJ" class="form-check-input">
+                    <label for="RJ" class="form-check-label">RJ</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" name="local" id="MG" class="form-check-input">
+                    <label for="MG" class="form-check-label">MG</label>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
